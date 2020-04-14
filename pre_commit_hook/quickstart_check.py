@@ -10,4 +10,4 @@ def extensioncheck():
     arr = os.listdir('test')
     print(arr)
 
-extensioncheck()
+#extensioncheck()
