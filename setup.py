@@ -27,7 +27,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'quickstart_check = quickstart_pre_commit_hook.pre_commit_hook:quickstart_check',
+            'quickstart_check = pre_commit_hook.quickstart_check:extensioncheck',
         ],
     },
 
