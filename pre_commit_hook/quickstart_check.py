@@ -2,7 +2,7 @@
 
 import os
 
-def extensioncheck():
+def main():
  if os.path.exists('./test/*.template.yaml'):
     print ("File Naming Standard Met = PASS")
  else:
@@ -10,4 +10,10 @@ def extensioncheck():
     arr = os.listdir('test')
     print(arr)
 
-#extensioncheck()
+
+if __name__ == '__main__':
+    try:
+        sys.exit(main())
+    except (ValueError, TypeError):
+        LOGGER.error(ValueError)
+
