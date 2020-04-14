@@ -1,1 +1,1 @@
-# quickstart_pre_commit_hook
+# pre-commit-hook-quickstart
