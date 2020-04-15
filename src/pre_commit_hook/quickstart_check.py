@@ -1,14 +1,19 @@
 #!/usr/bin/env python3
-
+import fnmatch
 import os
+import sys
+import logging
 
+LOGGER = logging.getLogger()
 def main():
- if os.path.exists('./test/*.template.yaml'):
+ file = sys.argv[1]
+ if fnmatch.fnmatch(file, '*.template.yaml'):
     print ("File Naming Standard Met = PASS")
  else:
     print ("Please Rename Following files to QuickStart Standard of *.template.yaml")
-    arr = os.listdir('test')
-    print(arr)
+    #arr = os.os.path.isfile(file)
+    print(file)
+
 
 
 if __name__ == '__main__':
