@@ -2,5 +2,5 @@
   name: quickstart_check
   entry: quickstart_check
   description: Hook to validate AWS QuickStart Templates.
-  language: [yaml]
+  language: python
   files: templates/*
